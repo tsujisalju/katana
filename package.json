@@ -1,0 +1,26 @@
+{
+    "name": "katana",
+    "version": "0.1.0",
+    "description": "Reference agent for Koshirae — a LangGraph.js agent that proposes on-chain actions and routes them through Koshirae's policy engine.",
+    "type": "module",
+    "main": "dist/index.js",
+    "scripts": {
+        "build": "tsc -p tsconfig.json",
+        "dev": "tsx src/index.ts",
+        "typecheck": "tsc --noEmit"
+    },
+    "author": "Qayyum <purrnama@proton.me>",
+    "license": "UNLICENSED",
+    "dependencies": {
+        "@langchain/anthropic": "^0.3.0",
+        "@langchain/core": "^0.3.0",
+        "@langchain/langgraph": "^0.2.0",
+        "dotenv": "^16.4.5",
+        "zod": "^3.23.8"
+    },
+    "devDependencies": {
+        "@types/node": "^22.7.0",
+        "tsx": "^4.19.0",
+        "typescript": "^5.6.0"
+    }
+}
